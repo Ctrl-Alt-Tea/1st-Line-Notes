@@ -40,6 +40,7 @@
             this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newCallToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.richTextBox = new System.Windows.Forms.RichTextBox();
+            this.newSaleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,7 +52,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem,
-            this.newCallToolStripMenuItem});
+            this.newCallToolStripMenuItem,
+            this.newSaleToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 33);
@@ -135,7 +137,14 @@
             this.richTextBox.Name = "richTextBox";
             this.richTextBox.Size = new System.Drawing.Size(800, 417);
             this.richTextBox.TabIndex = 1;
-            this.richTextBox.Text = "ALT + N for new call ...";
+            this.richTextBox.Text = "ALT + N for new call  or Alt + S for new sales lead ...";
+            // 
+            // newSaleToolStripMenuItem
+            // 
+            this.newSaleToolStripMenuItem.Name = "newSaleToolStripMenuItem";
+            this.newSaleToolStripMenuItem.Size = new System.Drawing.Size(98, 29);
+            this.newSaleToolStripMenuItem.Text = "New Sale";
+            this.newSaleToolStripMenuItem.Click += new System.EventHandler(this.newSaleToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -148,7 +157,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Opacity = 0.9D;
+            this.Opacity = 0.85D;
             this.Text = "1st Line Notes";
             this.TopMost = true;
             this.menuStrip1.ResumeLayout(false);
@@ -171,6 +180,7 @@
         private System.Windows.Forms.ToolStripMenuItem cutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pasteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem newSaleToolStripMenuItem;
     }
 }
 

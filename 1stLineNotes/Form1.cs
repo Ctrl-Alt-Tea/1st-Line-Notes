@@ -35,7 +35,7 @@ namespace _1stLineNotes
             this.KeyDown += new KeyEventHandler(Form1_KeyDown);
         }
 
-        // Event handler for key presses (to detect Shift + N)
+        // Event handler for key presses (to detect Alt + N or Alt + S)
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             // Check if Shift and N are pressed
@@ -43,6 +43,13 @@ namespace _1stLineNotes
             {
                 // Call the method to append the new call details
                 AppendCallDetails();
+            }
+
+            // Check if Shift and S are pressed
+            else if (e.Alt && e.KeyCode == Keys.S)
+            {
+                // Call the method to append the new call details
+                AppendSalesDetails();
             }
         }
 
@@ -55,12 +62,31 @@ namespace _1stLineNotes
                                  " \n" +
                                  "Caller Name -\n" +
                                  "Caller Number -\n" +
+                                 "Caller Email -\n" +
                                  "Merchant Trading Name -\n" +
                                  "Website Info -\n" +
                                  "Query:\n";
 
             // Append the text into the RichTextBox
             richTextBox.AppendText(callDetails);
+        }
+
+        // Method to append the new call details into the RichTextBox
+        private void AppendSalesDetails()
+        {
+            // Define the text to append
+            string saleDetails = " \n" +
+                                 " \n" +
+                                 "Caller Name -\n" +
+                                 "Caller Number -\n" +
+                                 "Caller Email -\n" +
+                                 "Region -\n" +
+                                 "Merchant/Franchise Trading Name -\n" +
+                                 "Website Info -\n" +
+                                 "Query:\n";
+
+            // Append the text into the RichTextBox
+            richTextBox.AppendText(saleDetails);
         }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
@@ -110,9 +136,16 @@ namespace _1stLineNotes
             richTextBox.Paste();
         }
 
+        // New Call Button
         private void newCallToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AppendCallDetails();
+        }
+
+        // New Sale Button
+        private void newSaleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AppendSalesDetails();
         }
     }
 }
