@@ -39,8 +39,10 @@
             this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newCallToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.richTextBox = new System.Windows.Forms.RichTextBox();
             this.newSaleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.richTextBox = new System.Windows.Forms.RichTextBox();
+            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clearFormattingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +55,8 @@
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem,
             this.newCallToolStripMenuItem,
-            this.newSaleToolStripMenuItem});
+            this.newSaleToolStripMenuItem,
+            this.clearFormattingToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 33);
@@ -96,7 +99,8 @@
             this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cutToolStripMenuItem,
             this.copyToolStripMenuItem,
-            this.pasteToolStripMenuItem});
+            this.pasteToolStripMenuItem,
+            this.undoToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(56, 29);
             this.editToolStripMenuItem.Text = "Edit";
@@ -104,21 +108,21 @@
             // cutToolStripMenuItem
             // 
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(140, 30);
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
             this.cutToolStripMenuItem.Text = "Cut";
             this.cutToolStripMenuItem.Click += new System.EventHandler(this.cutToolStripMenuItem_Click);
             // 
             // copyToolStripMenuItem
             // 
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(140, 30);
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
             this.copyToolStripMenuItem.Text = "Copy";
             this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
             // 
             // pasteToolStripMenuItem
             // 
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(140, 30);
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
             this.pasteToolStripMenuItem.Text = "Paste";
             this.pasteToolStripMenuItem.Click += new System.EventHandler(this.pasteToolStripMenuItem_Click);
             // 
@@ -128,6 +132,13 @@
             this.newCallToolStripMenuItem.Size = new System.Drawing.Size(94, 29);
             this.newCallToolStripMenuItem.Text = "New Call";
             this.newCallToolStripMenuItem.Click += new System.EventHandler(this.newCallToolStripMenuItem_Click);
+            // 
+            // newSaleToolStripMenuItem
+            // 
+            this.newSaleToolStripMenuItem.Name = "newSaleToolStripMenuItem";
+            this.newSaleToolStripMenuItem.Size = new System.Drawing.Size(98, 29);
+            this.newSaleToolStripMenuItem.Text = "New Sale";
+            this.newSaleToolStripMenuItem.Click += new System.EventHandler(this.newSaleToolStripMenuItem_Click);
             // 
             // richTextBox
             // 
@@ -139,12 +150,19 @@
             this.richTextBox.TabIndex = 1;
             this.richTextBox.Text = "ALT + N for new call  or Alt + S for new sales lead ...";
             // 
-            // newSaleToolStripMenuItem
+            // undoToolStripMenuItem
             // 
-            this.newSaleToolStripMenuItem.Name = "newSaleToolStripMenuItem";
-            this.newSaleToolStripMenuItem.Size = new System.Drawing.Size(98, 29);
-            this.newSaleToolStripMenuItem.Text = "New Sale";
-            this.newSaleToolStripMenuItem.Click += new System.EventHandler(this.newSaleToolStripMenuItem_Click);
+            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
+            this.undoToolStripMenuItem.Text = "Undo";
+            this.undoToolStripMenuItem.Click += new System.EventHandler(this.undoToolStripMenuItem_Click);
+            // 
+            // clearFormattingToolStripMenuItem
+            // 
+            this.clearFormattingToolStripMenuItem.Name = "clearFormattingToolStripMenuItem";
+            this.clearFormattingToolStripMenuItem.Size = new System.Drawing.Size(158, 29);
+            this.clearFormattingToolStripMenuItem.Text = "Clear Formatting";
+            this.clearFormattingToolStripMenuItem.Click += new System.EventHandler(this.clearFormattingToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -181,6 +199,8 @@
         private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pasteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newSaleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clearFormattingToolStripMenuItem;
     }
 }
 

@@ -136,6 +136,12 @@ namespace _1stLineNotes
             richTextBox.Paste();
         }
 
+        private void undoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            richTextBox.Undo();
+            richTextBox.ClearUndo();
+        }
+
         // New Call Button
         private void newCallToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -146,6 +152,14 @@ namespace _1stLineNotes
         private void newSaleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AppendSalesDetails();
+        }
+
+        // Clear Text Format
+        private void clearFormattingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string richText = richTextBox.SelectedText;
+            richTextBox.SelectedText = string.Empty;
+            richTextBox.AppendText(richText);
         }
     }
 }
