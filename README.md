@@ -31,4 +31,6 @@ Created by support technicians for support technicians !
   - Install .msi file
   - (Optional) pin app to task bar
  
+<a href="https://www.buymeacoffee.com/dylanrose" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+ 
 
