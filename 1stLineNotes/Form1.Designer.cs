@@ -38,11 +38,12 @@
             this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newCallToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newSaleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.richTextBox = new System.Windows.Forms.RichTextBox();
-            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clearFormattingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.richTextBox = new System.Windows.Forms.RichTextBox();
+            this.appLabel = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -108,23 +109,30 @@
             // cutToolStripMenuItem
             // 
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(142, 30);
             this.cutToolStripMenuItem.Text = "Cut";
             this.cutToolStripMenuItem.Click += new System.EventHandler(this.cutToolStripMenuItem_Click);
             // 
             // copyToolStripMenuItem
             // 
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(142, 30);
             this.copyToolStripMenuItem.Text = "Copy";
             this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
             // 
             // pasteToolStripMenuItem
             // 
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(142, 30);
             this.pasteToolStripMenuItem.Text = "Paste";
             this.pasteToolStripMenuItem.Click += new System.EventHandler(this.pasteToolStripMenuItem_Click);
+            // 
+            // undoToolStripMenuItem
+            // 
+            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(142, 30);
+            this.undoToolStripMenuItem.Text = "Undo";
+            this.undoToolStripMenuItem.Click += new System.EventHandler(this.undoToolStripMenuItem_Click);
             // 
             // newCallToolStripMenuItem
             // 
@@ -140,6 +148,13 @@
             this.newSaleToolStripMenuItem.Text = "New Sale";
             this.newSaleToolStripMenuItem.Click += new System.EventHandler(this.newSaleToolStripMenuItem_Click);
             // 
+            // clearFormattingToolStripMenuItem
+            // 
+            this.clearFormattingToolStripMenuItem.Name = "clearFormattingToolStripMenuItem";
+            this.clearFormattingToolStripMenuItem.Size = new System.Drawing.Size(158, 29);
+            this.clearFormattingToolStripMenuItem.Text = "Clear Formatting";
+            this.clearFormattingToolStripMenuItem.Click += new System.EventHandler(this.clearFormattingToolStripMenuItem_Click);
+            // 
             // richTextBox
             // 
             this.richTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -150,25 +165,25 @@
             this.richTextBox.TabIndex = 1;
             this.richTextBox.Text = "ALT + N for new call  or Alt + S for new sales lead ...";
             // 
-            // undoToolStripMenuItem
+            // appLabel
             // 
-            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
-            this.undoToolStripMenuItem.Text = "Undo";
-            this.undoToolStripMenuItem.Click += new System.EventHandler(this.undoToolStripMenuItem_Click);
-            // 
-            // clearFormattingToolStripMenuItem
-            // 
-            this.clearFormattingToolStripMenuItem.Name = "clearFormattingToolStripMenuItem";
-            this.clearFormattingToolStripMenuItem.Size = new System.Drawing.Size(158, 29);
-            this.clearFormattingToolStripMenuItem.Text = "Clear Formatting";
-            this.clearFormattingToolStripMenuItem.Click += new System.EventHandler(this.clearFormattingToolStripMenuItem_Click);
+            this.appLabel.BackColor = System.Drawing.Color.SteelBlue;
+            this.appLabel.CausesValidation = false;
+            this.appLabel.Font = new System.Drawing.Font("Harlow Solid Italic", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.appLabel.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.appLabel.Location = new System.Drawing.Point(530, 1);
+            this.appLabel.Name = "appLabel";
+            this.appLabel.Size = new System.Drawing.Size(258, 32);
+            this.appLabel.TabIndex = 2;
+            this.appLabel.Text = "1st Line Notes";
+            this.appLabel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.appLabel);
             this.Controls.Add(this.richTextBox);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
@@ -201,6 +216,7 @@
         private System.Windows.Forms.ToolStripMenuItem newSaleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clearFormattingToolStripMenuItem;
+        private System.Windows.Forms.Label appLabel;
     }
 }
 

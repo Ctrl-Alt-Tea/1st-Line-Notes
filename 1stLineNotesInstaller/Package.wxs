@@ -1,0 +1,9 @@
+﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Package Name="_1stLineNotesInstaller" Manufacturer="TODO Manufacturer" Version="1.0.0.0" UpgradeCode="3081a539-23c3-4166-b1b4-38b31d1e717c">
+    <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
+
+    <Feature Id="Main">
+      <ComponentGroupRef Id="ExampleComponents" />
+    </Feature>
+  </Package>
+</Wix>

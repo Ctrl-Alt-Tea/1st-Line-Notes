@@ -3,11 +3,11 @@
 
 
 // WHAT TO ADD NEXT:  
-//Undo/Redo functionality.
 //Find feature to search for text.
 //StatusBar to show line and column number or word count.
-//Text formatting like bold, italic, font size, or colors.
+//Text formatting like bold (Added), italic, font size, or colors.
 //Autosave feature or recovery in case of app crashes.
+// "Relax" button using api to show either a motivational quote or a funny image or joke.
 
 
 using System;
@@ -32,6 +32,7 @@ namespace _1stLineNotes
             this.DoubleBuffered = true;
             this.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
             // Set up KeyDown event handler for the form
+            this.KeyPreview = true; 
             this.KeyDown += new KeyEventHandler(Form1_KeyDown);
         }
 
@@ -51,6 +52,12 @@ namespace _1stLineNotes
                 // Call the method to append the new call details
                 AppendSalesDetails();
             }
+
+            else if (e.Control && e.KeyCode == Keys.B)
+            {
+                ToggleBoldText();
+            }
+
         }
 
 
@@ -88,6 +95,17 @@ namespace _1stLineNotes
             // Append the text into the RichTextBox
             richTextBox.AppendText(saleDetails);
         }
+
+        private void ToggleBoldText()
+        {
+            if (richTextBox.SelectionFont != null)
+            {
+                Font currentFont = richTextBox.SelectionFont;
+                FontStyle newFontStyle = richTextBox.SelectionFont.Bold ? FontStyle.Regular : FontStyle.Bold;
+                richTextBox.SelectionFont = new Font(currentFont.FontFamily, currentFont.Size, newFontStyle);
+            }
+        }
+
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -161,5 +179,6 @@ namespace _1stLineNotes
             richTextBox.SelectedText = string.Empty;
             richTextBox.AppendText(richText);
         }
+
     }
 }
