@@ -4,7 +4,8 @@ This application helps Supports agents manage and save the details of their call
 
 Created by support technicians for support technicians !
 
-![image](https://github.com/user-attachments/assets/1b58f0f3-bdb6-4c70-829b-4f2e2cc30892)
+![image](https://github.com/user-attachments/assets/92c9b148-599c-4baf-9701-d5c25554e896)
+
 
 
 
@@ -14,7 +15,7 @@ Created by support technicians for support technicians !
 - App will remain ontop of other apps by default
 - Supports Richtext format (Images, Custom fonts, etc)
 - Convert Richtext to plain text
-- ~~Ctrl + N and Ctrl + S shortcuts~~ (Currently being reworked)
+- ~~Ctrl + N and Ctrl + S shortcuts~~ (Bug addressed in v1.1.0.2, New install file release due or you may compile on your own in the interim)
 
 
 ### Usage:
@@ -31,6 +32,7 @@ Created by support technicians for support technicians !
   - Install .msi file
   - (Optional) pin app to task bar
  
+### Support the project:
 <a href="https://www.buymeacoffee.com/dylanrose" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
  
 
