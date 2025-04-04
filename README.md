@@ -1,4 +1,5 @@
 # 1st Line Notes
+![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white) ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white) ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white) ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 
 This application helps Supports agents manage and save the details of their calls.
 
@@ -15,7 +16,7 @@ Created by support technicians for support technicians !
 - App will remain ontop of other apps by default
 - Supports Richtext format (Images, Custom fonts, etc)
 - Convert Richtext to plain text
-- ~~Ctrl + N and Ctrl + S shortcuts~~ (Bug addressed in v1.1.0.2, New install file release due or you may compile on your own in the interim)
+- Ctrl + N and Ctrl + S shortcuts for templates
 
 
 ### Usage:
