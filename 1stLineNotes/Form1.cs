@@ -110,7 +110,7 @@ namespace _1stLineNotes
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
             richTextBox.Clear();
-            this.Text = "Unsaved Notes";  // Set window title to "Untitled"
+            this.Text = "Unsaved - Dont forget to save";  // Set window title to "Untitled"
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
