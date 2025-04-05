@@ -362,3 +362,4 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 /1stLineNotesInstall/1stLineNotesInstall.aiproj
+/1stLineInstall/1stLineInstall.aiproj
